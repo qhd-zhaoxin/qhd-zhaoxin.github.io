@@ -100,7 +100,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         function initMap() {
             // Define the location (latitude and longitude)
             var myLocation = { lat: 47.6026, lng: -122.3321 }; // Location: Seattle, WA
-            var summit = {lat: 47.424, lng: 47.424 -121.416}; // Summit at Snowqialmie; 
+            var Summit = {lat: 47.424, lng: -121.416}; // 
+	    var Crystal = {lat: 46.92332964, lng: -121.475998096};  
+	    var TimberlineLodge = {lat: 45.33, lng: -121.71};
+	    var Whistler = {lat: 50.116322, lng: -122.957359};
+	    var Taos = {lat: 36.594687, lng: -105.449505};
+	    var Ziyunshan = {lat: 40.023896, lng: 119.596639};
+	    var Qishan = {lat: 39.323788, lng: 114.690415};
 
             // Create a map centered at the location
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -108,12 +114,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 center: myLocation
             });
 
-            // Add a marker at the location
+            // Add markers at the location
             var marker = new google.maps.Marker({
-                position: summit,
+                position: Summit,
                 map: map,
                 title: 'Summit'
             });
+
+	    var marker = new google.maps.Marker({
+                position: Crystal,
+                map: map,
+                title: 'Crystal'
+            });
+
+	    var marker = new google.maps.Marker({
+                position: TimberlineLodge,
+                map: map,
+                title: 'TimberlineLodge'
+            });
+
+	    var marker = new google.maps.Marker({
+                position: Whistler,
+                map: map,
+                title: 'Whistler'
+            });
+
+	    var marker = new google.maps.Marker({
+                position: Taos,
+                map: map,
+                title: 'Taos'
+            });
+		
+	    var marker = new google.maps.Marker({
+                position: Ziyunshan,
+                map: map,
+                title: 'Ziyunshan'
+            });
+		
+	    var marker = new google.maps.Marker({
+                position: Qishan,
+                map: map,
+                title: 'Qishan'
+            });
+		
         }
     </script>
     <!-- Load the Google Maps JavaScript API with your API key -->
