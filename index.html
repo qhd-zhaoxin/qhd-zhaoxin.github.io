@@ -17,6 +17,169 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/mystyle.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+/* Responsive overrides: keep the existing theme while adapting it to any screen. */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: clamp(15px, 0.35vw + 13.5px, 18px);
+	scroll-behavior: smooth;
+}
+
+html, body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	line-height: 1.7;
+}
+
+.container {
+	width: min(100% - 32px, 1170px);
+	margin-inline: auto;
+}
+
+.centerImage {
+	width: 100%;
+	padding: clamp(12px, 3vw, 36px) 16px 0;
+	text-align: center;
+}
+
+.centerImage img,
+.about img,
+.footer img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-inline: auto;
+}
+
+.about {
+	padding-block: clamp(24px, 5vw, 60px);
+}
+
+.about .container,
+.footer .container {
+	overflow-wrap: anywhere;
+}
+
+.about ul {
+	margin: 0;
+	padding-left: clamp(20px, 4vw, 40px);
+}
+
+.about li {
+	margin-bottom: 1rem;
+}
+
+.navbar,
+.navbar-nav {
+	margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+	white-space: nowrap;
+}
+
+.footer-grids1-left ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 18px;
+	padding-left: 0;
+}
+
+@media (max-width: 991px) {
+	.footer-grid {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: min(100% - 24px, 1170px);
+	}
+
+	.header .container {
+		width: 100%;
+		padding-inline: 12px;
+	}
+
+	.navbar-header {
+		min-height: 52px;
+	}
+
+	.navbar-toggle {
+		margin-right: 0;
+	}
+
+	.navbar-collapse {
+		max-height: calc(100vh - 70px);
+		overflow-y: auto;
+	}
+
+	.navbar-nav {
+		width: 100%;
+		margin: 0;
+	}
+
+	.navbar-nav > li {
+		float: none;
+		width: 100%;
+	}
+
+	.navbar-nav > li > a {
+		padding: 12px 16px;
+	}
+
+	.about {
+		padding-block: 24px;
+	}
+
+	.about h3 {
+		font-size: clamp(1.5rem, 7vw, 2rem);
+	}
+
+	.footer-grid {
+		float: none;
+		width: 100%;
+		padding-bottom: 8px;
+	}
+
+	.footer-grid br {
+		display: none;
+	}
+
+	.footer-grids1-left,
+	.footer-grids1-right {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+@media (max-width: 420px) {
+	.container {
+		width: min(100% - 20px, 1170px);
+	}
+
+	.about ul {
+		padding-left: 18px;
+	}
+
+	.footer-grids1-left ul {
+		display: block;
+	}
+
+	.footer-grids1-left li {
+		margin-bottom: 8px;
+	}
+}
+</style>
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
@@ -302,7 +465,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 				</div>
 				<div class="footer-grids1-right">
-					<p class="animated wow slideInRight" data-wow-delay="0s">Template provided by <a href="http://w3layouts.com/">W3layouts</a></p>
+					<p class="animated wow slideInRight" data-wow-delay="0s">Template provided by <a href="https://w3layouts.com/">W3layouts</a></p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -331,4 +494,3 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //here ends scrolling icon -->
 </body>
 </html>
-
