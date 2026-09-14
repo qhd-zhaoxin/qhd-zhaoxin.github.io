@@ -19,6 +19,170 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/mystyle.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<style>
+/* Responsive overrides: keep the existing theme while adapting it to any screen. */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: clamp(15px, 0.35vw + 13.5px, 18px);
+	scroll-behavior: smooth;
+}
+
+html, body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	line-height: 1.7;
+}
+
+.container {
+	width: min(100% - 32px, 1170px);
+	margin-inline: auto;
+}
+
+.centerImage {
+	width: 100%;
+	padding: clamp(12px, 3vw, 36px) 16px 0;
+	text-align: center;
+}
+
+.centerImage img,
+.about img,
+.footer img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-inline: auto;
+}
+
+.about {
+	padding-block: clamp(24px, 5vw, 60px);
+}
+
+.about .container,
+.footer .container {
+	overflow-wrap: anywhere;
+}
+
+.about ul {
+	margin: 0;
+	padding-left: clamp(20px, 4vw, 40px);
+}
+
+.about li {
+	margin-bottom: 1rem;
+}
+
+.navbar,
+.navbar-nav {
+	margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+	white-space: nowrap;
+}
+
+.footer-grids1-left ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 18px;
+	padding-left: 0;
+}
+
+@media (max-width: 991px) {
+	.footer-grid {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: min(100% - 24px, 1170px);
+	}
+
+	.header .container {
+		width: 100%;
+		padding-inline: 12px;
+	}
+
+	.navbar-header {
+		min-height: 52px;
+	}
+
+	.navbar-toggle {
+		margin-right: 0;
+	}
+
+	.navbar-collapse {
+		max-height: calc(100vh - 70px);
+		overflow-y: auto;
+	}
+
+	.navbar-nav {
+		width: 100%;
+		margin: 0;
+	}
+
+	.navbar-nav > li {
+		float: none;
+		width: 100%;
+	}
+
+	.navbar-nav > li > a {
+		padding: 12px 16px;
+	}
+
+	.about {
+		padding-block: 24px;
+	}
+
+	.about h3 {
+		font-size: clamp(1.5rem, 7vw, 2rem);
+	}
+
+	.footer-grid {
+		float: none;
+		width: 100%;
+		padding-bottom: 8px;
+	}
+
+	.footer-grid br {
+		display: none;
+	}
+
+	.footer-grids1-left,
+	.footer-grids1-right {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+@media (max-width: 420px) {
+	.container {
+		width: min(100% - 20px, 1170px);
+	}
+
+	.about ul {
+		padding-left: 18px;
+	}
+
+	.footer-grids1-left ul {
+		display: block;
+	}
+
+	.footer-grids1-left li {
+		margin-bottom: 8px;
+	}
+}
+</style>
+<!-- js -->
 <!-- //js -->
 <!-- animation-effect -->
 <link href="css/animate.min.css" rel="stylesheet"> 
@@ -127,11 +291,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="container" >
         <h3 class="animated wow zoomIn" data-wow-delay="0s">Conference Proceedings</h3>
 	</br>
-		<p><b>Xin Zhao</b>, Brian Vu, and Sitesh Pattanaik, “Is Artificial Intelligence an Elixir to the Software Engineering Community? An Empirical Study Among Managers.” In <i>Proceedings of the 3rd ACM International Conference on AI-powered Software</i>, in press. </p>
+		<p><b>Xin Zhao</b>, Brian Vu, and Sitesh Pattanaik, “Is Artificial Intelligence an Elixir to the Software Engineering Community? An Empirical Study Among Managers.” In <i>Proceedings of the 3rd ACM International Conference on AI-powered Software</i>, pp. 168-177, Montreal, Canada, July 2026. https://doi.org/10.1145/3805760.3814907. <b>ACM SIGSOFT Distinguished Paper Award</b> </p>
 		</br>
-		<p><b>Xin Zhao</b> and Ai Sun, “Mapping K–12 Educators’ Professional Learning Pathways to AI Literacy and Integration: An Empirical Study.” In <i> Proceedings of the 18th International Conference on Computer Supported Education</i>, in press. </p>
+		<p><b>Xin Zhao</b> and Ai Sun, “Mapping K–12 Educators’ Professional Learning Pathways to AI Literacy and Integration: An Empirical Study.” In <i> Proceedings of the 18th International Conference on Computer Supported Education</i>, pp. Volume 2, 1278-1289, Benidorm, Spain, May 2026. https://doi.org/10.5220/0014980400004021. </p>
 		</br>
-		<p>Zhiju Yang, Xiaoshuai Zhang, and <b>Xin Zhao</b>, “AuditCopilot: An End-to-End LLM-Based Framework for Automated Vulnerability Detection in Web3.” In <i> Proceedings of the 8th International Conference on Blockchain Technology and Applications</i>, in press. </p>
+		<p>Zhiju Yang, Xiaoshuai Zhang, and <b>Xin Zhao</b>, “AuditCopilot: An End-to-End LLM-Based Framework for Automated Vulnerability Detection in Web3.” In <i> Proceedings of the 8th International Conference on Blockchain Technology and Applications</i>, pp. 47-68, Kanazawa, Japan, December 2025. </p>
 		</br>
 		<p><b>Xin Zhao</b> and Parth Manish Reshamwala, “Personalized Medicine Meets Artificial Intelligence: A Systematic Literature Review,” In <i>Proceedings of the Third International Conference on AI-Health</i>, pp. 82-89, Valencia, Spain, March 2026.</p>
 		</br>
@@ -173,12 +337,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<h3 class="animated wow zoomIn" data-wow-delay="0s">Reviewer</h3>
 		</br>
 		<p>
-		<p>Journal of Software and Systems Modeling (Springer)</p>
-		<p>23th International Conference on Model Driven Engineering Languages and Systems (MODELS’20)</p>
-		<p>16th European Conference on Modelling Foundations and Applications (ECMFA'20)</p>
-		<p>15th European Conference on Modelling Foundations and Applications (ECMFA'19)</p>
-		<p>10th International Conference on Model Transformation (ICMT'17) </p>
-		<p>22nd Conference of Evaluation and Modelling Methods for Systems Analysis and Development (EMMSAD'17)</p>
+		<p>Journal of Software and Systems Modeling</p>
+		<p>Transactions on Software Engineering and Methodology </p>
+		<p>Software: Practice and Experience</p>
+		<p>International Conference on Model Driven Engineering Languages and Systems</p>
+		<p>European Conference on Modelling Foundations and Applications</p>
+		<p>European Conference on Modelling Foundations and Applications</p>
+		<p>International Conference on Model Transformation</p>
+		<p>Conference of Evaluation and Modelling Methods for Systems Analysis and Development</p>
         <div class="clearfix"> </div>
     </div>
 </div>
